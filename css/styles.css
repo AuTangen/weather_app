@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkcyan;
+    padding: 2%;
+    color:rgb(255, 255, 255)
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    min-height: 300px;
+    padding: 1%;
+    margin: 2% 2% 2%;
+    border: 2px solid black;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+
+.column {
+    display: flex;
+    /* flex-direction: row; */
+    
+}
