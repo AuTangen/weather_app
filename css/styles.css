@@ -27,5 +27,6 @@ header {
 .column {
     display: flex;
     /* flex-direction: row; */
+    }
+
     
-}
