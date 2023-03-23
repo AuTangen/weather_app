@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -12,11 +13,23 @@ header {
     color:rgb(255, 255, 255)
 }
 
+main {
+    display: flex;
+}
+
+section {
+    flex-direction: row;
+    width: 90%
+}
+
 .aside {
     display: flex;
+    flex: .15;
     flex-direction: column;
+    align-items: center;
     width: 15%;
-    min-height: 300px;
+    height: 30vh;
+    /* height: 50%; */
     padding: 1%;
     margin: 2% 2% 2%;
     border: 2px solid black;
@@ -29,4 +42,44 @@ header {
     /* flex-direction: row; */
     }
 
+button {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    width: 90%;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 3%;
+}
+
+button:hover {
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+#searchbar {
+    padding: 2%;
     
+}
+
+
+#display {
+    margin: 1%;
+    padding: 2% 10% 10%;
+    border: 2px solid black;
+}
+
+#forecast {
+     display: flex; 
+     margin: 3%;
+}
+
+.box {
+    flex-wrap: nowrap;
+    background-color: darkcyan;
+    color: white;
+    margin: 0, 0, 5% 5%;
+    padding: 2%;
+    width: 60%;
+    border: 2px solid white;
+}
