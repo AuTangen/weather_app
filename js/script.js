@@ -19,8 +19,8 @@
 // }
 // getLocation()
 
-var forecastURL = 'http://api.openweathermap.org/data/2.5/forecast?appid='
-var geoURL = 'http://api.openweathermap.org/geo/1.0/direct?appid=';
+var forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?appid='
+var geoURL = 'https://api.openweathermap.org/geo/1.0/direct?appid=';
 var apiKey = 'bc976bd0e83bab3ef0409fd860d16fa4'
 var city = $('#searchbar').val()
 var search = $('#search')
