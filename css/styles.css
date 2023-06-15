@@ -66,6 +66,7 @@ button {
     background-color:rgb(9, 150, 243);
     color: white;
     border: none;
+    border-radius: 8px;
     padding: 1%;
 }
 
@@ -128,3 +129,15 @@ button:hover {
     
 }
 
+@media screen and (max-width: 768px) {
+
+    #searchbar {
+        
+        width: 75%;
+        height: 24px;
+     }
+
+    button {
+        width: 25%;
+    }
+}
