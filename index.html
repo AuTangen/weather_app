@@ -14,52 +14,69 @@
         <h1>Weather Dashboard</h1>
     </header>
     <main>
-        <aside id="side-history" class="aside">
+        <div id="side-history" class="aside .center">
             <h3>Search for a City:</h3>
             <input id="searchbar">
             <button id="search">Search</button>
             
-        </aside>
-        <section>
-        <div id="display">
+        </div>
+        <section class=".center">
+        <div id="display" class=".center">
+            <div id="title"><h2>Current Forecast</h2></div>
             <h3 id="currentForecast">placeholder text</h3>
-            <p id="temp">Temp: </p>
+            <h2 id="temp" class="temp">Temp: </h2>
             <p id="wind">Wind: </p>
             <p id="humid">Humidity: </p>
+            <div id="icon"></div>
         </div>
 
         <div id="forecast">
-            <h4>5-Day Forecast</h4>
+            <h2>5-Day Forecast</h2>
             <div id="fore1" class="box">
-                <h5 id="day1-forecast">[5] date goes here</h5>
-                <p id="temp1">Temp: </p>
+                <div class="forecast-main">
+                <h3 id="day1-forecast">[5] date goes here</h3>
+                <div id="icon1"></div>
+                <h3 id="temp1" class="temp">Temp: </h3>
+            </div>
                 <p id="wind1">Wind: </p>
                 <p id="humid1">Humidity: </p>
             </div>
             <div id="fore2" class="box">
-                <h5 id="day2-forecast">[10] date goes here</h5>
-                <p id="temp2">Temp: </p>
+                <div class="forecast-main">
+                <h3 id="day2-forecast">[10] date goes here</h3>
+                <div id="icon2"></div>
+                <h3 id="temp2" class="temp">Temp: </h3>
+            </div>
                 <p id="wind2">Wind: </p>
                 <p id="humid2">Humidity: </p>
             </div>
             
             <div id="fore3" class="box">
-                <h5 id="day3-forecast">[15] date goes here</h5>
-                <p id="temp3">Temp: </p>
+                <div class="forecast-main">
+                <h3 id="day3-forecast">[15] date goes here</h3>
+                <div id="icon3"></div>
+                <h3 id="temp3" class="temp">Temp: </h3>
+            </div>
                 <p id="wind3">Wind: </p>
                 <p id="humid3">Humidity: </p>
             </div>
             
             <div id="fore4" class="box">
-                <h5 id="day4-forecast">[20] date goes here</h5>
-                <p id="temp4">Temp: </p>
+                <div class="forecast-main">
+                <h3 id="day4-forecast">[20] date goes here</h3>
+                <div id="icon4"></div>
+                <h3 id="temp4" class="temp">Temp: </h3>
+            </div>
                 <p id="wind4">Wind: </p>
                 <p id="humid4">Humidity: </p>
             </div>
 
             <div id="fore5" class="box">
-                <h5 id="day5-forecast">[25] date goes here</h5>
-                <p id="temp5">Temp: </p>
+                <div class="forecast-main">
+                <h3 id="day5-forecast">[25] date goes here</h3>
+                <div id="icon5"></div>
+                <h3 id="temp5" class="temp">Temp: </h3>
+            </div>
                 <p id="wind5">Wind: </p>
                 <p id="humid5">Humidity: </p>
             </div>

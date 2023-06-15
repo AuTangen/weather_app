@@ -1,40 +1,55 @@
+:root {
+    --back-color: rgb(11, 142, 185)
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
+
+body {
+    background-color:rgb(125, 198, 223);
+    color: white;
+}
+
+.center {
+    /* border: 5px solid; */
+    margin: auto;
+    width: 50%;
+    /* padding: 10px; */
+  }
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: darkcyan;
+    background-color: var(--back-color);
     padding: 2%;
     color:rgb(255, 255, 255)
 }
 
-main {
-    display: flex;
-}
 
-section {
-    flex-direction: row;
-    width: 90%
-}
 
 .aside {
     display: flex;
-    flex: .15;
+    
     flex-direction: column;
     align-items: center;
-    width: 15%;
-    height: 30vh;
-    /* height: 50%; */
+    /* width: 30vw; */
+    height: fit-content;
+    
     padding: 1%;
     margin: 2% 2% 2%;
-    border: 2px solid black;
+    border-radius: 8px;
     text-align: center;
     flex-wrap: nowrap;
+    background-color: var(--back-color);
+}
+
+section {
+    padding: 2%;
 }
 
 .column {
@@ -46,40 +61,70 @@ button {
     display: flex;
     justify-content: center;
     margin: 2%;
-    width: 90%;
-    background-color: darkcyan;
+    width: 20%;
+    height: fit-content;
+    background-color:rgb(9, 150, 243);
     color: white;
     border: none;
-    padding: 3%;
+    padding: 1%;
 }
 
 button:hover {
-    background-color: lightseagreen;
+    background-color:rgb(3, 84, 138);
     cursor: pointer;
 }
 #searchbar {
-    padding: 2%;
-    
-}
+    padding: 1%;
+    width: 30%;
+    height: fit-content;
+ }
 
 
 #display {
-    margin: 1%;
+    /* margin: 1% 5% 0 0; */
     padding: 2% 10% 10%;
-    border: 2px solid black;
+    border-radius: 10px;
+    background-color: var(--back-color);
+    color: white;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 2%;
 }
 
 #forecast {
-     display: flex; 
-     margin: 3%;
+     /* display: flex; 
+     flex-direction: column; */
+     background-color: var(--back-color);
+     margin-top: 2%;
+     align-items: center;
+     border-radius: 10px;
+     padding: 0% 5%;
+    
+     
+}
+
+#forecast h2 {
+   text-align: center;
+
+}
+
+.forecast-main {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.temp {
+    text-align: end;
 }
 
 .box {
-    flex-wrap: nowrap;
-    background-color: darkcyan;
-    color: white;
-    margin: 0, 0, 5% 5%;
+    border-bottom: solid rgb(125, 198, 223) 2px;   
+    margin-bottom: 2%;
     padding: 2%;
-    width: 60%;
-    border: 2px solid white;
+   
+    
 }
+
