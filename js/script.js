@@ -24,6 +24,7 @@ var geoURL = 'https://api.openweathermap.org/geo/1.0/direct?appid=';
 var apiKey = 'bc976bd0e83bab3ef0409fd860d16fa4'
 var city = $('#searchbar').val()
 var search = $('#search')
+var cityname = $('#city')
 var currentForecast = $('#currentForecast')
 var day1Forecast = $('#day1-forecast')
 var day2Forecast = $('#day2-forecast')
@@ -98,7 +99,8 @@ function initialDisplay() {
 
             console.log('foretemp ' + foretemp)
             console.log(weatherIcon)
-            currentForecast.text(weatherData.city.name + ' ' + date);
+            cityname.text(weatherData.city.name)
+            currentForecast.text(date);
             icon.html(`<img src="https://openweathermap.org/img/w/${weatherIcon}.png">`)
             temp.text(foretemp.slice(0, foretemp.indexOf('.')) + ' \u00B0'+ 'F');
             wind.text('Wind: ' + weatherData.list[0].wind.speed + 'mph');
@@ -230,7 +232,8 @@ function getCoords(){
 
             
             var savedCity = weatherData.city.name;
-            currentForecast.text(weatherData.city.name + ' ' + date);
+            cityname.text(weatherData.city.name)
+            currentForecast.text(date);
             icon.html(`<img src="https://openweathermap.org/img/w/${weatherIcon}.png">`)
             temp.text(foretemp.slice(0, foretemp.indexOf('.')) + ' \u00B0'+ 'F');
             wind.text('Wind: ' + weatherData.list[0].wind.speed + 'mph');
