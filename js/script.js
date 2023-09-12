@@ -89,6 +89,7 @@ function initialDisplay() {
             var weatherIcon3 = weatherData.list[23].weather[0].icon
             var weatherIcon4 = weatherData.list[31].weather[0].icon
             var weatherIcon5 = weatherData.list[39].weather[0].icon
+            
 
             var foretemp = String(weatherData.list[0].main.temp)
             var foretemp1 = String(weatherData.list[7].main.temp)
@@ -107,7 +108,8 @@ function initialDisplay() {
             humidity.text('Humidity: ' + weatherData.list[0].main.humidity + '%');
 
             // 5 day forecast---------------------slice date--------------------
-            
+
+     
             day1Forecast.text(weatherData.list[7].dt_txt.slice(5, 10))
             icon1.html(`<img src="https://openweathermap.org/img/w/${weatherIcon1}.png">`)
             temp1.text(foretemp1.slice(0, foretemp1.indexOf('.')) + ' \u00B0'+ 'F');

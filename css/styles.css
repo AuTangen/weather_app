@@ -12,6 +12,7 @@
 body {
     background-color:rgb(125, 198, 223);
     color: white;
+    
 }
 
 .center {
@@ -27,10 +28,51 @@ header {
     justify-content: center;
     background-color: var(--back-color);
     padding: 2%;
-    color:rgb(255, 255, 255)
+    color:rgb(255, 255, 255);
+    margin-bottom: 2%;
 }
 
+.card{
+    width: max(90%, 300px);
+    background-color: var(--back-color);
 
+    /* background: linear-gradient(135deg, #00feba, #5b548a); */
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 24px;
+    width: 80%;
+    font-size: 18px;
+}
+button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+}
 
 .aside {
     display: flex;
@@ -48,6 +90,8 @@ header {
     background-color: var(--back-color);
 }
 
+
+
 section {
     padding: 2%;
 }
@@ -57,7 +101,7 @@ section {
     /* flex-direction: row; */
     }
 
-button {
+/* button {
     display: flex;
     justify-content: center;
     margin: 2%;
@@ -68,7 +112,7 @@ button {
     border: none;
     border-radius: 8px;
     padding: 1%;
-}
+} */
 
 button:hover {
     background-color:rgb(3, 84, 138);
