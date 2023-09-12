@@ -111,7 +111,7 @@ function initialDisplay() {
 
      
             day1Forecast.text(weatherData.list[7].dt_txt.slice(5, 10))
-            icon1.html(`<img src="https://openweathermap.org/img/w/${weatherIcon1}.png">`)
+            icon1.html(`<img class="icon" src="https://openweathermap.org/img/w/${weatherIcon1}.png">`)
             temp1.text(foretemp1.slice(0, foretemp1.indexOf('.')) + ' \u00B0'+ 'F');
             wind1.text('Wind: ' + weatherData.list[7].wind.speed + 'mph');
             humidity1.text('Humidity: ' + weatherData.list[7].main.humidity + '%');
