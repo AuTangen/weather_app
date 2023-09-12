@@ -6,7 +6,7 @@ Ever wonder what the weather's like on the other side of the country? Well now t
 n/a
 
 ## Usage
-Type a city name into to the search bar and you'll recieve current weather data as well as a 5-day forecast. Recent searches are saved to the sidebar so you can easily click back and pull up their weather again.
+Type a city name into to the search bar and you'll recieve current weather data as well as a 5-day forecast.
 ![type a city and get the weather!](assets/images/screenshot.png)
 
 ## Credits
